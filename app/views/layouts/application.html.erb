@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PinnaclePlan</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  	<%= link_to "Home", root_path %>
+		<%= link_to "How Can We Help You?", help_path %>
+		<%= link_to "Contact Us", contact_path %>
+    <%= link_to "About the Attorney", about_path %>
+		<%= link_to "News", news_index_path %>
+		<%= link_to "Clients", clients_path %>
+    <%= yield %>
+  </body>
+</html>
